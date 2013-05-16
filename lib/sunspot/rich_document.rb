@@ -26,7 +26,11 @@ module Sunspot
             params['stream.url']         = f.value[:file]
             params['stream.contentType'] = f.value[:type]
           else
-            data = open(f.value).read rescue ""
+            if f.value.class == String
+              data = open(f.value).read rescue ""
+            else
+              data = f.value.read rescue ""
+            end
           end
         else
           param_name = "literal.#{f.name.to_s}"

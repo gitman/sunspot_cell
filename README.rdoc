@@ -1,5 +1,9 @@
 = Sunspot Cell (gem)
 
+== Note by Gitman
+
+* This fork from @zheileman is to support Mongodb GridFS.
+
 == Note by Zheileman
 
 * This gem exists because the only gem I could find for the original project (https://github.com/springbok/sunspot_cell) was the one packaged by Kevin Motschiedler (https://github.com/motske/sunspot_cell) and it lacks the support to deal with S3 included in this other fork: https://github.com/chebyte/sunspot_cell
